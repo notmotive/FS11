@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>RECIPES</title>
+    <link rel="canonical" href="https://veronicden.github.io/FullStack6/sasha/no-amp/">
+    <!-- !!!!!!!!!!!!!!!!!!!!! Поменять ссылку сверху ОБЯЗАТЕЛЬНО после первой выкладки на GitHub -->
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="RECIPES">
+    <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style>
+    <noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+    <script async src="https://cdn.ampproject.org/v0.js"></script>
+    <style amp-custom>
+      * {
+  margin: 0;
+  padding: 0;
+  font-family: Lato, serif;
+  color: #000000;
+  box-sizing: border-box;
+}
+h1 {
+  font-weight: bold;
+  color: #ffffff;
+  font-size: 100px;
+}
+h2 {
+  font-family: "Times New Roman", serif;
+  font-weight: bold;
+  font-size: 36px;
+  color: #ffffff;
+}
+h3 {
+  font-weight: bold;
+  font-size: 18px;
+}
+p {
+  font-weight: lighter;
+  font-size: 16px;
+}
+.line {
+  width: 86px;
+  border-top: 1px solid #f57365;
+  margin-bottom: 19px;
+}
+header {
+  width: 100%;
+  padding-left: calc((100% - 1180px) / 2);
+  padding-right: calc((100% - 1180px) / 2);
+  padding-top: 40px;
+  padding-bottom: 240px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url("pictures/background.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+header nav {
+  width: 100%;
+  height: 65px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+header nav amp-img.logo {
+  margin-right: auto;
+}
+header nav a {
+  color: #ffffff;
+  margin-right: 30px;
+}
+header h2 {
+  font-style: italic;
+  opacity: 70%;
+  margin: 265px 0 10px 0;
+}
+header h1 {
+  margin-bottom: 35px;
+}
+header button {
+  width: 280px;
+  height: 70px;
+  background: none;
+  font-size: 18px;
+  color: #ffffff;
+  font-weight: bold;
+  outline: #eaeaea;
+  border: 4px Solid #ffffff;
+  border-radius: 3px;
+}
+header p {
+  color: #ffffff;
+  font-size: 14px;
+  text-align: center;
+  margin-top: 35px;
+}
+article {
+  width: 100%;
+  padding-left: calc((100% - 1180px) / 2);
+  padding-right: calc((100% - 1180px) / 2);
+  display: flex;
+}
+article.gets {
+  padding-top: 100px;
+  padding-bottom: 90px;
+  align-items: center;
+  justify-content: space-between;
+}
+article.gets .get {
+  width: 360px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+article.gets .get .picture {
+  width: 110px;
+  height: 110px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  border: 2px solid #000000;
+}
+article.gets .get h3 {
+  margin: 20px 0 10px 0;
+}
+article.gets .get p {
+  text-align: center;
+}
+article.introduction {
+  padding-top: 182px;
+  padding-bottom: 286px;
+  flex-direction: column;
+  background-color: #eaeaea;
+  background-image: url("pictures/iphone.webp");
+  background-repeat: no-repeat;
+  background-position: calc((100% - 1180px) / 2 + 240px) bottom;
+}
+article.introduction .content {
+  margin-left: 640px;
+}
+article.introduction .content h3 {
+  margin-bottom: 10px;
+}
+article.introduction .content p {
+  margin-bottom: 30px;
+}
+article.introduction .content .download {
+  width: 240px;
+  display: flex;
+  justify-content: space-between;
+}
+article.review {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  flex-direction: column;
+  align-items: center;
+  background-color: #4a3949;
+  background-image: url("pictures/background1.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+article.review amp-img {
+  width: 115px;
+  height: 115px;
+}
+article.review p {
+  width: 890px;
+  text-align: center;
+  margin: 20px 0 15px 0;
+  font-size: 28px;
+  font-weight: 100;
+  opacity: 30%;
+  color: #ffffff;
+}
+article.review p.name {
+  margin: 0 0 40px 0;
+  font-size: 16px;
+  font-style: italic;
+}
+article.review .slider {
+  width: 55px;
+  display: flex;
+  justify-content: space-between;
+}
+article.review .slider .circle {
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  background: #ffffff;
+  opacity: 20%;
+}
+article.review .slider .circle.active {
+  opacity: 100%;
+}
+menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 100px 0 60px;
+}
+menu .line {
+  margin: 10px 0 40px;
+}
+menu .content {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+menu .content .content-item {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 20%;
+  height: 228px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+menu .content .content-item p {
+  font-family: "Times New Roman", serif;
+  font-size: 16px;
+  font-weight: bold;
+  font-style: italic;
+  color: #ffffff;
+}
+menu .content .content-item h3 {
+  color: #ffffff;
+  font-size: 36px;
+}
+
+menu .content #one {
+  background-image: url("pictures/italian.webp");
+}
+menu .content #two {
+  background-image: url("pictures/indian.webp");
+}
+menu .content #three {
+  background-image: url("pictures/franch.webp");
+}
+menu .content #four {
+  background-image: url("pictures/steakhouse.webp");
+}
+menu .content #five {
+  background-image: url("pictures/seafood.webp");
+}
+menu .content #six {
+  background-image: url("pictures/sushi.webp");
+}
+menu .content #seven {
+  background-image: url("pictures/mexican.webp");
+}
+menu .content #eight {
+  background-image: url("pictures/chinese.webp");
+}
+menu .content #nine {
+  background-image: url("pictures/pizza.webp");
+}
+menu .content #ten {
+  background-image: url("pictures/american.webp");
+}
+
+menu .text-content {
+  width: 100%;
+  margin-top: 40px;
+  padding-left: calc((100% - 1180px) / 2);
+  padding-right: calc((100% - 1180px) / 2);
+  display: flex;
+  justify-content: space-between;
+}
+menu .text-content h3 {
+  font-size: 36px;
+}
+menu .text-content .text {
+  width: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+footer {
+  width: 100%;
+  height: 95px;
+  background-color: #f3f3f3;
+  border-top: 1px solid #8b8b8b;
+  padding-left: calc((100% - 1180px) / 2);
+  padding-right: calc((100% - 1180px) / 2);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+footer p {
+  font-weight: lighter;
+  font-size: 14px;
+  color: #000000;
+}
+footer p span {
+  color: #000000;
+  font-weight: normal;
+}
+
+@media (max-width: 1260px) and (min-width: 981px) {
+  header {
+    padding-left: calc((100% - 900px) / 2);
+    padding-right: calc((100% - 900px) / 2);
+ }
+  article {
+    padding-left: calc((100% - 900px) / 2);
+    padding-right: calc((100% - 900px) / 2);
+ }
+  article.gets .get {
+    width: 290px;
+ }
+  article.introduction {
+    background-image: none;
+    padding-top: 90px;
+    padding-bottom: 140px;
+ }
+  article.introduction .content {
+    margin: 0;
+ }
+  menu .text-content {
+    padding-left: calc((100% - 900px) / 2);
+    padding-right: calc((100% - 900px) / 2);
+ }
+  menu {
+    padding-left: calc((100% - 900px) / 2);
+    padding-right: calc((100% - 900px) / 2);
+ }
+  menu .content {
+    justify-content: center;
+ }
+  menu .content .content-item {
+    width: 33%;
+ }
+  menu .content #ten {
+    display: none;
+ }
+  footer {
+    padding-left: calc((100% - 900px) / 2);
+    padding-right: calc((100% - 900px) / 2);
+ }
+}
+@media (max-width: 980px) and (min-width: 681px) {
+  header {
+    padding-left: calc((100% - 600px) / 2);
+    padding-right: calc((100% - 600px) / 2);
+ }
+  article {
+    padding-left: calc((100% - 600px) / 2);
+    padding-right: calc((100% - 600px) / 2);
+ }
+  article.gets {
+    flex-direction: column;
+    padding-bottom: 55px;
+ }
+  article.gets .get {
+    width: 450px;
+    flex-direction: row;
+    flex-wrap: wrap;
+ }
+  article.gets .get .picture {
+    margin: 0 0 15px 20px;
+ }
+  article.gets .get h3 {
+    margin: 0 auto;
+ }
+  article.gets .get p {
+    margin-bottom: 35px;
+ }
+  article.introduction {
+    background-image: none;
+    padding-top: 90px;
+    padding-bottom: 140px;
+ }
+  article.introduction .content {
+    margin: 0;
+ }
+  article.review p {
+    width: 100%;
+ }
+  menu .text-content {
+    padding-left: calc((100% - 600px) / 2);
+    padding-right: calc((100% - 600px) / 2);
+ }
+  menu {
+    padding-left: calc((100% - 600px) / 2);
+    padding-right: calc((100% - 600px) / 2);
+ }
+  menu .content {
+    justify-content: center;
+ }
+  menu .content .content-item {
+    width: 50%;
+ }
+  menu .text-content {
+    display: none;
+ }
+  footer {
+    padding-left: calc((100% - 600px) / 2);
+    padding-right: calc((100% - 600px) / 2);
+ }
+}
+@media (max-width: 680px) {
+  h1 {
+    font-size: 60px;
+ }
+  h2 {
+    font-size: 20px;
+ }
+  header {
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 150px;
+ }
+  header nav {
+    height: 100px;
+    margin-top: 70px;
+    justify-content: center;
+ }
+  header nav amp-img, header nav a {
+    display: none !important;
+ }
+  header nav amp-img.logo {
+    display: block !important;
+    margin: 0;
+ }
+  header h2 {
+    margin: 120px 0 0 0;
+ }
+  header h1 {
+    margin-bottom: 15px;
+ }
+  header button {
+    width: 160px;
+    height: 40px;
+    border: 1px Solid #ffffff;
+    font-size: 11px;
+ }
+  article {
+    padding-left: 40px;
+    padding-right: 40px;
+ }
+  article.gets {
+    flex-direction: column;
+    padding-bottom: 55px;
+ }
+  article.gets .get {
+    width: 100%;
+    margin-bottom: 35px;
+ }
+  article.introduction {
+    background-image: none;
+    padding-top: 90px;
+    padding-bottom: 100px;
+ }
+  article.introduction .content {
+    margin: 0;
+ }
+  article.introduction .content .download {
+    width: 100%;
+    flex-direction: column;
+ }
+  article.introduction .content .download amp-img {
+    max-width: 120px;
+    margin-bottom: 10px;
+ }
+  article.review p {
+    width: 100%;
+ }
+  menu .text-content {
+    padding-left: 40px;
+    padding-right: 40px;
+    display: none;
+ }
+  menu {
+    padding-left: calc((100% - 1180px) / 2);
+    padding-right: calc((100% - 1180px) / 2);
+ }
+  menu .content {
+    justify-content: center;
+ }
+  menu .content .content-item {
+    height: 100px;
+    width: 100%;
+ }
+  footer {
+    padding-left: 40px;
+    padding-right: 40px;
+    flex-direction: column;
+    justify-content: center;
+ }
+}
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <amp-img src="pictures/logo.webp" class="logo" alt="logo" srcset="pictures/logo.webp 68w" width="68" height="59" layout="fixed"></amp-img>
+        <a href="">LOG IN</a>
+        <a href="">SIGN UP</a>
+        <amp-img src="pictures/menu-icon.webp" alt="menu" srcset="pictures/menu-icon.webp 14w" width="14" height="10" layout="fixed"></amp-img>
+      </nav>
+      <h2>Find your Favorite</h2>
+      <h1>RECIPES</h1>
+      <button>GET STARTED</button>
+      <p>OR SEND US YOUR OWN RECIPES AND GET REWARDED!</p>
+    </header>
+    
+    <article class="gets">
+      <div class="get">
+        <div class="picture">
+          <amp-img src="pictures/burger.webp" alt="burger" srcset="pictures/burger.webp 60w" width="60" height="60" layout="fixed"></amp-img>
+        </div>
+        <h3>GET INSPIRED</h3>
+        <div class="line"></div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisc Pellentesque vel enim a elit viverra elementuma. Aliguam erat
+          volutpat.</p>
+      </div>
+      <div class="get">
+        <div class="picture">
+          <amp-img src="pictures/money.webp" alt="money" srcset="pictures/money.webp 60w" width="60" height="32" layout="fixed"></amp-img>
+        </div>
+        <h3>GET REWARDED</h3>
+        <div class="line"></div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisc Pellentesque vel enim a elit viverra elementuma. Aliguam erat
+          volutpat.</p>
+      </div>
+      <div class="get">
+        <div class="picture">
+          <amp-img src="pictures/man.webp" alt="man" srcset="pictures/man.webp 60w" width="60" height="60" layout="fixed"></amp-img>
+        </div>
+        <h3>GET SOCIAL</h3>
+        <div class="line"></div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisc Pellentesque vel enim a elit viverra elementuma. Aliguam erat
+          volutpat.</p>
+      </div>
+    </article>
+    
+    <article class="introduction">
+      <div class="content">
+        <h3>INTRODUCING THE FUDI APP</h3>
+        <div class="line"></div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At consequuntur culpa deserunt dicta dolorem eum
+          explicabo harum hic ipsam modi nulla numquam quia quidem, recusandae soluta! Aliquid corporis ipsa molestias?</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa, dignissimos dolorem et quia reprehenderit sed
+          vero voluptatibus. Accusantium cum eius error esse fuga officia officiis porro reprehenderit, sequi! Accusamus
+          deleniti facere ipsam totam voluptatibus! Fuga, ipsum, voluptates?</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam distinctio dolor doloremque dolores dolorum
+          necessitatibus odit quam voluptatibus. Corporis, hic.</p>
+        <div class="download">
+          <amp-img src="pictures/app-store.webp" alt="app-store" srcset="pictures/app-store.webp 112w" width="112" height="39" layout="fixed"></amp-img>
+          <amp-img src="pictures/google-play.webp" alt="google-play" srcset="pictures/google-play.webp 120w" width="120" height="39" layout="fixed"></amp-img>
+        </div>
+      </div>
+    </article>
+    
+    <article class="review">
+      <amp-img src="pictures/avatar.webp" alt="avatar" srcset="pictures/avatar.webp 115w" width="115" height="115" layout="fixed"></amp-img>
+      <p>“I am so happy because I found this recipe, and it just made my life easier. Thanks so much for sharing.</p>
+      <p class="name">Michael Dawson, San Francisco, CA</p>
+      <div class="slider">
+        <div class="circle active"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+      </div>
+    </article>
+    
+    <menu>
+      <h3>INTRODUCING THE FUDI APP</h3>
+      <div class="line"></div>
+    
+      <div class="content">
+        <div class="content-item" id="one">
+          <p>327 Recipes</p>
+          <h3>ITALIAN</h3>
+        </div>
+        <div class="content-item" id="two">
+          <p>856 Recipes</p>
+          <h3>INDIAN</h3>
+        </div>
+        <div class="content-item" id="three">
+          <p>27 Recipes</p>
+          <h3>FRENCH</h3>
+        </div>
+        <div class="content-item" id="four">
+          <p>174 Recipes</p>
+          <h3>STEAKHOUSE</h3>
+        </div>
+        <div class="content-item" id="five">
+          <p>731 Recipes</p>
+          <h3>SEAFOOD</h3>
+        </div>
+        <div class="content-item" id="six">
+          <p>237 Recipes</p>
+          <h3>SUSHI</h3>
+        </div>
+        <div class="content-item" id="seven">
+          <p>529 Recipes</p>
+          <h3>MEXICAN</h3>
+        </div>
+        <div class="content-item" id="eight">
+          <p>145 Recipes</p>
+          <h3>CHINESE</h3>
+        </div>
+        <div class="content-item" id="nine">
+          <p>327 Recipes</p>
+          <h3>PIZZA</h3>
+        </div>
+        <div class="content-item" id="ten">
+          <p>1.437 Recipes</p>
+          <h3>AMERICAN</h3>
+        </div>
+      </div>
+    
+      <div class="text-content">
+        <div class="text">
+          <h3>23,567</h3>
+          <p>Recipes Available</p>
+        </div>
+        <div class="text">
+          <h3>431,729</h3>
+          <p>Active Users</p>
+        </div>
+        <div class="text">
+          <h3>892,173</h3>
+          <p>Positive Reviews</p>
+        </div>
+        <div class="text">
+          <h3>56,581</h3>
+          <p>Photos & Videos</p>
+        </div>
+        <div class="text">
+          <h3>3,182</h3>
+          <p>Spices and Herbs</p>
+        </div>
+      </div>
+    
+    </menu>
+    
+    <footer>
+      <p>©2014 Fudi. All Rights Reserved.</p>
+      <p>DESIGN BY: <span>WWW.BEKADES.COM</span></p>
+    </footer>
+  </body>
+</html>
